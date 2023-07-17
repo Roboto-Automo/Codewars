@@ -3,11 +3,11 @@ function alphabetPosition(text) {
                                "o", "p", "q","r", "s", "t", "u", "v", "w", "x", "y", "z"]
      let newText = ""
      
-     for (let i = 0; i < text.length; i++){
-       for(let j = 0; j < alphabetPositions.length; j++){
+     for (let i = 0; i < text.length; i++){  // loop through the text 
+       for(let j = 0; j < alphabetPositions.length; j++){ // loop through the alphabet array for each letter in the text
        if (text[i].toLowerCase() === alphabetPositions[j] ){
          newText += (j + 1).toString() + " "
-       break;
+       break; // the break here stops the loop from continuing to run after the first match is found
        }   
      }
      }
